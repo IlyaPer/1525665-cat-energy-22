@@ -1,6 +1,41 @@
 .page-header {
+  display: flex;
+  flex-column: column;
+  flex-wrap: wrap;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-around;
+  }
+}
+
+.main-nav-list {
+  display: flex;
+  flex-column: column;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.page-header__logo-image {
+  height: 38px;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
+  }
+}
+
+.site-list__item--active {
+  border-bottom: 2px solid @underline-menu;
 }
