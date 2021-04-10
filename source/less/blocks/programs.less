@@ -1,18 +1,65 @@
+.programs__header {
+  display: grid;
+  grid-template-rows: calc(1fr * 4);
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: calc(1fr * 4);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: calc(1fr * 3);
+    grid-template-columns: calc(1fr * 3);
+  }
+}
+
 .programs__intro {
+  grid-column: 1 / 1;
   font-size: 36px;
   font-family: "Oswald", "Arial", sans-serif;
 }
 
 .programs__slogan {
+  grid-column: 1 / 1;
   font-size: 14px;
   font-family: "Oswald", "Arial", sans-serif;
 }
 
 .programs__button {
   background-color: @basic-green;
-  color: @footer-background;
+  color: @basic-grey;
   font-size: 18px;
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    height: 54px;
+  }
+}
+
+.programs__background-photo {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-column: ~'2/2';
+    grid-row: ~'2/3';
+  }
+}
+
+.programs__photo {
+  @media (min-width: @tablet-width) {
+    grid-column: ~'2/2';
+    grid-row: ~'3/3';
+  }
 }
 
 .programs__item {
