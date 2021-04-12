@@ -33,12 +33,21 @@
       <section class="programs">
         <div class="programs__wrapper">
           <header class="programs__header">
-            <h2 class="visually-hidden">Программы питания</h2>
-            <p class="programs__intro">Функциональное питание для котов</p>
-            <p class="programs__slogan">Занялся собой? Займись котом!</p>
-            <img class="programs__background-photo" src="img/index-background-desktop2.png" alt="Облизывающийся кот">
+            <div class="programs__text-container">
+              <h2 class="visually-hidden">Программы питания</h2>
+              <p class="programs__intro">Функциональное питание для котов</p>
+              <p class="programs__slogan">Занялся собой? Займись котом!</p>
+              <button class="programs__button programs__button--desktop">Подобрать программу</button>
+            </div>
             <img class="programs__photo" src="img/index-can-mobile%201.png" alt="Банка с курицей">
-            <button class="programs__button">Подобрать программу</button>
+            <div class="programs__text-container">
+              <div class="programs__header-background">
+                <div class="programs__green-background"></div>
+                <img class="programs__background-photo" src="img/index-background-desktop2.png" alt="Облизывающийся кот">
+              </div>
+              <img class="programs__photo programs__photo--mobile" src="img/index-can-mobile%201.png" alt="Банка с курицей">
+              <button class="programs__button programs__button--mobile">Подобрать программу</button>
+            </div>
           </header>
           <ul class="programs__list">
             <li class="programs__item">
@@ -98,30 +107,30 @@
             </li>
           </ul>
         </div>
-        <h2 class="example__title example__title--desktop">Живой пример</h2>
+        <h2 class="instructions__example-title instructions__example-title--desktop">Живой пример</h2>
       </section>
       <section class="example">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="example__stats example__stats--list">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__stats example__stats--item">
-              <dt class="example__stats example__stats--header">5 КГ</dt>
-              <dd class=" example__stats example__stats--description">снижение веса</dd>
+            <div class="example__stats">
+              <dt class="example__stats-header">5 КГ</dt>
+              <dd class="example__stats-description">снижение веса</dd>
             </div>
-            <div class="example__stats example__stats--item">
-              <dt class="example__stats example__stats--header">60 дней</dt>
-              <dd class="example__stats example__stats--description">затрачено времени</dd>
+            <div class="example__stats">
+              <dt class="example__stats-header">60 дней</dt>
+              <dd class="example__stats-description">затрачено времени</dd>
             </div>
-            <h2 class="example__stats example__costs">Затраты на питание: 15000 РУБ.</h2>
           </dl>
+        <h2 class="example__stats example__costs">Затраты на питание: 15000 РУБ.</h2>
         <div class="example__grid-container">
           <img src="img/before-mobile%201.png" alt="Кот Борис">
           <div class="example__stats example__slider">
-            <p class="example__stats example__slider--title">БЫЛО</p>
-            <div class="example__stats example__slider--slider">
+            <p class="example__slider-title">БЫЛО</p>
+            <div class="example__stats example__slider">
               <img src="img/slider.svg" alt="Слайдер">
             </div>
-            <p class="example__stats example__slider--title">СТАЛО</p>
+            <p class="example__slider-title">СТАЛО</p>
         </div>
         </div>
       </section>
