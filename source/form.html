@@ -33,49 +33,80 @@
         <h2 class="program__intro">Подбор программы</h2>
         <h4 class="program__description">ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</h4>
         <form class="program-form">
-          <label class="program-form__label" for="name">ИМЯ:<sup>*</sup></label>
-          <input class="program-form__input" type="text" name="name" id="name" value="барсик">
-          <label class="program-form__label" for="weight">ВЕС (КГ):<sup>*</sup></label>
-          <input class="program-form__input" type="number" name="weight" id="weight" value="7">
-          <label class="program-form__label" for="age">ВОЗРАСТ</label>
-          <input class="program-form__input" type="number" name="age" id="age" value="7">
-          <hr class="program__hr">
-          <div class="program-choice">
-            <label class="program-choice__label" for="weight-loss">ПОХУДЕНИЕ</label>
-            <input class="program-choice__input" type="checkbox" name="weight-loss" id="weight-loss">
-            <label class="program-choice__label" for="muscle-growth">НАБОР МАССЫ</label>
-            <input class="program-choice__input" type="checkbox" name="muscle-growth" id="muscle-growth">
-            <label class="program-choice__label" for="advice">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
-            <input class="program-choice__input" type="checkbox" name="advice" id="advice">
+          <div class="program-form__container">
+            <div class="program__cat-info">
+              <div class="program__info">
+                <label class="program-form__label" for="name">ИМЯ:<sup>*</sup></label>
+                <input class="program-form__input" type="text" name="name" id="name" value="барсик">
+              </div>
+              <div class="program__info">
+                <label class="program-form__label" for="weight">ВЕС (КГ):<sup>*</sup></label>
+                <input class="program-form__input" type="number" name="weight" id="weight" value="7">
+              </div>
+              <div class="program__info">
+                <label class="program-form__label" for="age">ВОЗРАСТ</label>
+                <input class="program-form__input" type="number" name="age" id="age" value="7">
+              </div>
+            </div>
+            <div class="program-choice">
+              <div class="program-choice__choice">
+                <input class="program-choice__input" type="checkbox" name="weight-loss" id="weight-loss">
+                <label class="program-choice__label" for="weight-loss">ПОХУДЕНИЕ</label>
+              </div>
+              <div class="program-choice__choice">
+                <input class="program-choice__input" type="checkbox" name="muscle-growth" id="muscle-growth">
+                <label class="program-choice__label" for="muscle-growth">НАБОР МАССЫ</label>
+              </div>
+              <div class="program-choice__choice">
+                <input class="program-choice__input" type="checkbox" name="advice" id="advice">
+                <label class="program-choice__label" for="advice">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
+              </div>
+            </div>
           </div>
-          <hr class="program__hr">
           <div class="contact-form">
             <h2 class="contact-form__title">Контактные данные (владельца кота)</h2>
-            <label class="contact-form__label" for="email">E-MAIL:<sup>*</sup></label>
-            <input class="contact-form__input" type="email" name="email" id="email">
-            <label class="contact-form__label" for="phone">ТЕЛЕФОН:<sup>*</sup></label>
-            <input class="contact-form__input" type="tel" name="phone" id="phone">
+            <div class="contact-form__choice">
+              <div class="contact-form__info">
+                <label class="contact-form__label" for="email">E-MAIL:<sup>*</sup></label>
+                <input class="contact-form__input" type="email" name="email" id="email">
+              </div>
+              <div class="contact-form__info">
+                <label class="contact-form__label" for="phone">ТЕЛЕФОН:<sup>*</sup></label>
+                <input class="contact-form__input" type="tel" name="phone" id="phone">
+              </div>
+            </div>
           </div>
           <div class="comment-form">
             <label class="comment-form__title" for="comment">Комментарий</label>
-            <hr class="comment-form__hr">
             <textarea class="comment-form__textarea" name="comment" id="comment">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
           </div>
           <div class="addition-form">
             <hr class="program__hr">
             <h2 class="addition-form__title">Дополнительно</h2>
-            <label class="addition-form__label" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
-            <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
-            <label class="addition-form__label" for="water">ПИТЬЕВАЯ ВОДА</label>
-            <input class="addition-form__input" type="checkbox" name="water" id="water">
-            <label class="addition-form__label" for="milk">МОЛОКО</label>
-            <input class="addition-form__input" type="checkbox" name="milk" id="milk">
-            <label class="addition-form__label" for="vitamins">ВИТАМИНЫ</label>
-            <input class="addition-form__input" type="checkbox" name="vitamins" id="vitamins">
+            <div class="addition-form__container">
+              <div class="addition-form__point">
+                <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
+                <label class="addition-form__label" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
+              </div>
+              <div class="addition-form__point">
+                <input class="addition-form__input" type="checkbox" name="water" id="water">
+                <label class="addition-form__label" for="water">ПИТЬЕВАЯ ВОДА</label>
+              </div>
+              <div class="addition-form__point">
+                <input class="addition-form__input" type="checkbox" name="milk" id="milk">
+                <label class="addition-form__label" for="milk">МОЛОКО</label>
+              </div>
+              <div class="addition-form__point">
+                <input class="addition-form__input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="addition-form__label" for="vitamins">ВИТАМИНЫ</label>
+              </div>
+            </div>
           </div>
-          <input class="program-form__submit" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+          <div class="program-form__container-btn">
+            <input class="program-form__submit" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+            <p class="program__notice"><sup>*</sup> — Обязательные поля</p>
+          </div>
         </form>
-        <p class="program__notice"><sup>*</sup> — Обязательные поля</p>
       </section>
       <section class="offer offer--form-style">
         <h2 class="offer__title">Приглашаем к сотрудничеству дилеров!</h2>
