@@ -15,7 +15,6 @@
 .program__cat-info {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 
   @media (min-width: @desktop-width) {
     width: 50%;
@@ -80,12 +79,6 @@
   }
 }
 
-.contact-form__choice {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .contact-form__info {
   display: flex;
   flex-wrap: no-wrap;
@@ -97,6 +90,9 @@
 }
 
 .contact-form__choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 219px;
 
   @media (min-width: @tablet-width) {
@@ -160,10 +156,10 @@
 .program-form__container-btn {
   width: 100%;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-around;
   }
 }
@@ -173,6 +169,7 @@
 }
 
 .program-form__label {
+  height: 52px;
   color: @special_dark-grey;
 }
 
@@ -218,6 +215,8 @@
 .comment-form__textarea {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+  width: 280px;
+  height: 150px;
 
   @media (min-width: @tablet-width) {
     width: 631px;
@@ -243,7 +242,6 @@
 }
 
 .program__notice {
-  border: 2px solid red;
   padding: 20px;
   margin: 20px;
   font-size: 16px;
