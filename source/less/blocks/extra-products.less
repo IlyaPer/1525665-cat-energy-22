@@ -5,11 +5,51 @@
   font-weight: 400;
 }
 
+.extra-products__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.extra-products__main-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+  }
+}
+
+.extra-products__gift,
+.extra-products__list {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 45%;
+  }
+}
+
+
 .extra-products__description,
 .extra-products__price {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   color: @special_dark-grey;
+}
+
+.extra-products__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid red;
+}
+
+.extra-products__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .extra-products__button {
