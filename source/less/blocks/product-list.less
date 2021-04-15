@@ -1,11 +1,92 @@
-.programs__title {
-  font-size: 37px;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
 }
 
-.programs__description {
-  font-size: 18px;
+.product-list__item {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-grey;
+    width: 324px;
+    height: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 20px;
+    width: 245px;
+    height: 512px;
+  }
 }
 
-.programs__href--text {
+.product-list__item--more {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 279px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 429px;
+    background-color: @white;
+    border: 2px solid @basic-grey;
+  }
+}
+
+.product-list__button {
+  width: 279px;
+  height: 40px;
+  background-color: @basic-grey;
   font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+    height: 40px;
+  }
+}
+
+.page-main__title {
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.product-list__title {
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.product-list__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list__text {
+  width: 50%;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  color: @special_dark-grey;
+}
+
+.product-list__order-button {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  width: 280px;
+  height: 40px;
+  background-color: @basic-green;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
