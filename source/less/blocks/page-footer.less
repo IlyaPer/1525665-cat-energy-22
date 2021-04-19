@@ -1,12 +1,30 @@
 .page-footer {
   background-color: @basic-grey;
+  height: 236px;
+  margin: 0;
 
   @media (min-width: @desktop-width) {
     display: flex;
   }
 }
 
+.page-footer__img {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__img--first {
+  margin-top: 0px;
+}
+
 .page-footer__hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: @programs-hr;
+
   @media (min-width: @desktop-width) {
     transform: scale(0);
   }

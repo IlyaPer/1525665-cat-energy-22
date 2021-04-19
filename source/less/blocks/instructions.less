@@ -1,23 +1,35 @@
 .instructions__list {
+  margin-top: -70px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-around;
+  }
 }
 
 .instructions__item {
+  margin-top: 20px;
+
   @media (min-width: @tablet-width) {
     width: 230px;
   }
 }
 
+.instructions__info-container {
+  display: flex;
+}
+
 .instructions__title {
+  margin-left: 10%;
   font-size: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 
 .instructions__description {
+  padding-left: 10px;
   color: @special_dark-grey;
   font-size: 18px;
   font-family: "Arial", sans-serif;
@@ -25,7 +37,7 @@
 }
 
 .instructions__number {
-  transform: scale(0);
+  display: none;
   margin: 0;
   padding: 0;
   font-size: 280px;
@@ -34,7 +46,7 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
-    transform: scale(1);
+    display: block;
   }
 }
 
