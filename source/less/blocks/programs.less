@@ -1,3 +1,11 @@
+.programs__wrapper {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    z-index: -1;
+    margin-top: -100px;
+  }
+}
+
 .programs__header {
   @media (min-width: @tablet-width) {
     color: black;
@@ -8,7 +16,14 @@
 }
 
 .programs__text-container {
-  position: absolute;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: inherit;
+    width: 50%;
+  }
 }
 
 .programs__intro {
@@ -29,6 +44,10 @@
     margin-left: 10%;
     width: 414px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20%;
+  }
 }
 
 .programs__slogan {
@@ -44,6 +63,16 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -20px;
+    text-align: left;
+    margin-left: 10%;
+    display: block;
+    position: relative;
+    color: black;
+    font-size: 20px;
   }
 }
 
@@ -61,6 +90,8 @@
   @media (min-width: @desktop-width) {
     width: 244px;
     height: 54px;
+    position: relative;
+    margin-left: 10%;
   }
 }
 
@@ -121,9 +152,17 @@
 }
 
 .programs__list {
+  display: flex;
   list-style: none;
   margin-top: 15px;
-  margin-right: 10%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }
 
 .programs__mini-header {
@@ -142,6 +181,16 @@
     margin-top: 250px;
     z-index: -1;
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 552px;
+    height: 499px;
+    z-index: 3;
   }
 }
 
@@ -173,6 +222,10 @@
 }
 
 .programs__hr {
+  color: @programs-hr;
+  margin-left: 10%;
+  margin-right: 10%;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -191,11 +244,17 @@
 }
 
 .programs__item {
-  display: block;
-  margin-right: auto;
-  matgin-left: auto;
   margin-top: 20px;
   background-color: @basic-grey;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__title {
@@ -212,12 +271,6 @@
   font-size: 18px;
   font-family: "Arial", sans-serif;
   color: @special_dark-grey;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.programs__hr {
-  color: @programs-hr;
   margin-left: 10%;
   margin-right: 10%;
 }

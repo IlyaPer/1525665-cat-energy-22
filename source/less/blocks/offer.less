@@ -6,12 +6,15 @@
   margin-left: 5%;
   height: 114px;
   margin-top: 15px;
+  justify-content: space-between;
 
   @media (min-width: @desktop-width) {
+    text-align: center;
     display: block;
     position: absolute;
     background-color: @white;
     width: 570px;
+    height: 201px;
     margin-top: 200px;
   }
 }
@@ -20,6 +23,14 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.offer__location {
+  text-align: left;
 }
 
 .offer__description {
