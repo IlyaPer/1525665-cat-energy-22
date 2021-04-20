@@ -1,23 +1,54 @@
 .instructions__list {
+  width: 90%;
+  padding-left: 5%;
+  margin-bottom: 80px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .instructions__item {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
   @media (min-width: @tablet-width) {
     width: 230px;
+    height: 280px;
+    margin: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 10px;
+  }
+}
+
+.instructions__info-container {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
   }
 }
 
 .instructions__title {
+  margin-left: 5%;
   font-size: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .instructions__description {
+  padding-left: 10px;
   color: @special_dark-grey;
   font-size: 18px;
   font-family: "Arial", sans-serif;
@@ -25,8 +56,9 @@
 }
 
 .instructions__number {
-  transform: scale(0);
-  margin: 0;
+  margin-top: -70px;
+  margin-left: 100px;
+  display: none;
   padding: 0;
   font-size: 280px;
   color: @basic-grey;
@@ -34,7 +66,9 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
-    transform: scale(1);
+    display: block;
+    position: absolute;
+    z-index: -1;
   }
 }
 
@@ -48,5 +82,7 @@
 .instructions__example-title--desktop {
   @media (min-width: @desktop-width) {
     display: block;
+    font-size: 60px;
+    margin-left: 5%;
   }
 }
