@@ -19,17 +19,17 @@
       </div>
       <hr class="page-header__hr">
       <nav class="main-nav">
-        <ul class="main-nav-list site-list">
+        <ul class="main-nav-list site-list site-list--form">
           <li class="site-list__item">
-            <a class="site-list__href site-list__href--active">ГЛАВНАЯ</a>
+            <a class="site-list__href site-list__href--active site-list__href--form">ГЛАВНАЯ</a>
           </li>
           <hr class="page-header__hr">
           <li class="site-list__item">
-            <a class="site-list__href">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="site-list__href site-list__href--form">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <hr class="page-header__hr">
           <li class="site-list__item">
-            <a class="site-list__href">ПОДБОР ПРОДУКЦИИ</a>
+            <a class="site-list__href site-list__href--form">ПОДБОР ПРОДУКЦИИ</a>
           </li>
         </ul>
       </nav>
@@ -75,24 +75,26 @@
               <div class="contact-form__info">
                 <label class="contact-form__label" for="email">E-MAIL:<sup>*</sup></label>
                 <input class="contact-form__input" type="email" name="email" id="email">
+                <img class="contact-form__svg" src="img/phone1.svg" alt="телефон">
               </div>
               <div class="contact-form__info">
                 <label class="contact-form__label" for="phone">ТЕЛЕФОН:<sup>*</sup></label>
                 <input class="contact-form__input" type="tel" name="phone" id="phone">
+                <img class="contact-form__svg" src="img/phone1.svg" alt="телефон">
               </div>
             </div>
           </div>
-          <hr class="comment-form__hr">
           <div class="comment-form">
             <label class="comment-form__title" for="comment">Комментарий</label>
+            <hr class="comment-form__hr">
             <textarea class="comment-form__textarea" name="comment" id="comment">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
           </div>
           <div class="addition-form">
-            <hr class="program__hr">
+            <hr class="addition-form__program__hr">
             <h2 class="addition-form__title">Дополнительно</h2>
             <div class="addition-form__container">
               <div class="addition-form__point">
-                <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
+                 <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
                 <label class="addition-form__label" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
               </div>
               <div class="addition-form__point">
@@ -110,25 +112,33 @@
             </div>
           </div>
           <div class="program-form__container-btn">
-            <input class="program-form__submit" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
-            <p class="program__notice"><sup>*</sup> — Обязательные поля</p>
+            <div class="program-form__max-width">
+              <input class="program-form__submit" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+            </div>
+              <p class="program__notice"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
       </section>
-      <section class="offer offer--form-style">
-        <h2 class="offer__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="offer__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="offer">
+        <div class="offer__container">
+          <h2 class="offer__title">Приглашаем к сотрудничеству диллеров!</h2>
+          <p class="offer__location">
+            ул. Большая Конюшенная, д.
+            <br>
+            19/8 Санкт-Петербург
+          </p>
+        </div>
       </section>
-      <img src="img/location.png" alt="Кэт Энерджи на карте">
+      <iframe class="page__location-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.604920923832!2d30.321277140361943!3d59.93869767163809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618935541885!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </main>
     <footer class="page-footer">
       <h1 class="visually-hidden">Мы в социальных сетях</h1>
-      <img src="img/footer-logo2.svg" alt="Кэт эенерджи">
-      <hr>
-      <img src="img/social_icons.svg" alt="Мы в социальных сетях">
-      <hr>
+      <img class="page-footer__img page-footer__img--first" src="img/footer-logo2.svg" alt="Кэт эенерджи">
+      <hr class="page-footer__hr">
+      <img class="page-footer__img page-footer__img--social" src="img/social_icons.svg" alt="Мы в социальных сетях">
+      <hr class="page-footer__hr">
       <a href="https://up.htmlacademy.ru/adaptive/22/project/cat-energy#cat-energy-3-9">
-        <img src="img/logo_html.svg" alt="HTML Academy">
+        <img class="page-footer__img" src="img/logo_html.svg" alt="HTML Academy">
       </a>
     </footer>
   </body>
