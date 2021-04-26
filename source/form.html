@@ -15,21 +15,21 @@
         <div class="main-nav-wrapper">
           <img src="img/footer-logo2.svg" alt="Cat Energy">
         </div>
-        <button class="main-nav__toggle" type="button"><img src="img/logo_mobile.svg" alt="логотип Cat energy"></button>
+        <button class="main-nav__toggle" type="button"><img src="img/logo_mobile.svg"></button>
       </div>
       <hr class="page-header__hr">
       <nav class="main-nav">
-        <ul class="main-nav-list site-list site-list--form">
+        <ul class="main-nav-list site-list">
           <li class="site-list__item">
-            <a class="site-list__href site-list__href--active site-list__href--form">ГЛАВНАЯ</a>
-            <hr class="page-header__hr">
+            <a href="index.html" class="site-list__href">ГЛАВНАЯ</a>
           </li>
+          <hr class="page-header__hr">
           <li class="site-list__item">
-            <a class="site-list__href site-list__href--form">КАТАЛОГ ПРОДУКЦИИ</a>
-            <hr class="page-header__hr">
+            <a href="catalog.html" class="site-list__href">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
+          <hr class="page-header__hr">
           <li class="site-list__item">
-            <a class="site-list__href site-list__href--form">ПОДБОР ПРОДУКЦИИ</a>
+            <a href="form.html" class="site-list__href site-list__btn-href--active">ПОДБОР ПРОДУКЦИИ</a>
           </li>
         </ul>
       </nav>
@@ -50,64 +50,85 @@
                 <input class="program-form__input" type="number" name="weight" id="weight" value="7">
               </div>
               <div class="program__info">
-                <label class="program-form__label" for="age">ВОЗРАСТ</label>
+                <label class="program-form__label" for="age">ВОЗРАСТ (ЛЕТ):</label>
                 <input class="program-form__input" type="number" name="age" id="age" value="7">
               </div>
             </div>
+            <hr class="program__hr">
             <div class="program-choice">
               <div class="program-choice__choice">
-                <input class="program-choice__input" type="radio" name="weight-loss" id="weight-loss">
+                <input class="program-choice__input" type="radio" name="program" id="weight-loss">
                 <label class="program-choice__label" for="weight-loss">ПОХУДЕНИЕ</label>
               </div>
               <div class="program-choice__choice">
-                <input class="program-choice__input" type="radio" name="muscle-growth" id="muscle-growth">
+                <input class="program-choice__input" type="radio" name="program" id="muscle-growth">
                 <label class="program-choice__label" for="muscle-growth">НАБОР МАССЫ</label>
               </div>
               <div class="program-choice__choice">
-                <input class="program-choice__input" type="radio" name="advice" id="advice">
+                <input class="program-choice__input" type="radio" name="program" id="advice">
                 <label class="program-choice__label" for="advice">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
               </div>
             </div>
           </div>
+          <hr class="program__hr">
           <div class="contact-form">
-            <h2 class="contact-form__title">Контактные данные (владельца кота)</h2>
+            <hr class="contact-form__hr">
+            <div class="contact-form__title-container">
+              <h2 class="contact-form__title">Контактные данные (владельца кота)</h2>
+            </div>
             <div class="contact-form__choice">
               <div class="contact-form__info">
-                <label class="contact-form__label" for="email">E-MAIL:<sup>*</sup></label>
-                <input class="contact-form__input" type="email" name="email" id="email">
-                <img class="contact-form__svg" src="img/phone1.svg" alt="телефон">
+                <label class="contact-form__label" for="email" value="kuklachev@gmail.com">E-MAIL:<sup>*</sup></label>
+                <input class="contact-form__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                <img class="contact-form__svg" src="img/icon_email.svg" alt="телефон">
               </div>
               <div class="contact-form__info">
                 <label class="contact-form__label" for="phone">ТЕЛЕФОН:<sup>*</sup></label>
-                <input class="contact-form__input" type="tel" name="phone" id="phone">
+                <input class="contact-form__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
                 <img class="contact-form__svg" src="img/phone1.svg" alt="телефон">
               </div>
             </div>
           </div>
           <div class="comment-form">
-            <label class="comment-form__title" for="comment">Комментарий</label>
-            <hr class="comment-form__hr">
+            <hr class="program__decorative-hr">
+            <div class="comment-form__title-container">
+              <label class="comment-form__title" for="comment">Комментарий</label>
+            </div>
             <textarea class="comment-form__textarea" name="comment" id="comment">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
           </div>
           <div class="addition-form">
-            <hr class="addition-form__program__hr">
-            <h2 class="addition-form__title">Дополнительно</h2>
+            <hr class="program__decorative-hr">
+            <div class="addition-form__title-container">
+              <h2 class="addition-form__title">Дополнительно</h2>
+            </div>
             <div class="addition-form__container">
               <div class="addition-form__point">
-                <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
-                <label class="addition-form__label" for="sugar">САХАРОЗАМЕНИТЕЛЬ</label>
+                <label class="addition-form__label option">
+                  <input class="addition-form__input" type="checkbox" name="sugar" id="sugar">
+                  <span class="addition-form__checkbox"></span>
+                  САХАРОЗАМЕНИТЕЛЬ
+                </label>
               </div>
               <div class="addition-form__point">
-                <input class="addition-form__input" type="checkbox" name="water" id="water">
-                <label class="addition-form__label" for="water">ПИТЬЕВАЯ ВОДА</label>
+                <label class="addition-form__label option">
+                  <input class="addition-form__input" type="checkbox" name="sugar" id="sugar" checked>
+                  <span class="addition-form__checkbox"></span>
+                  ПИТЬЕВАЯ ВОДА
+                </label>
               </div>
               <div class="addition-form__point">
-                <input class="addition-form__input" type="checkbox" name="milk" id="milk">
-                <label class="addition-form__label" for="milk">МОЛОКО</label>
+                <label class="addition-form__label option">
+                  <input class="addition-form__input" type="checkbox" name="sugar" id="sugar" checked>
+                  <span class="addition-form__checkbox"></span>
+                  МОЛОКО
+                </label>
               </div>
               <div class="addition-form__point">
-                <input class="addition-form__input" type="checkbox" name="vitamins" id="vitamins">
-                <label class="addition-form__label" for="vitamins">ВИТАМИНЫ</label>
+                <label class="addition-form__label option">
+                  <input class="addition-form__input" type="checkbox" name="sugar" id="sugar" checked>
+                  <span class="addition-form__checkbox"></span>
+                  ВИТАМИНЫ
+                </label>
               </div>
             </div>
           </div>
