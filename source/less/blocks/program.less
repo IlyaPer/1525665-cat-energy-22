@@ -109,14 +109,16 @@
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  margin-left: 5%;
 
   @media (min-width: @tablet-width) {
     margin-top: 50px;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-around;
+    margin-left: 5%;
   }
 }
 
@@ -145,11 +147,11 @@
   height: 22px;
   border-radius: 50%;
   background-color: white;
-  border: 2px solid @basic-green;
+  border: 2px solid @special-grey;
 
-  @media (min-width: @desktop-width) {
-    height: 30px;
-    width: 30px;
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -162,16 +164,21 @@
   border-radius: 50%;
   background-color: @basic-green;
   visibility: visible;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+    transform: translate(60%, 60%);
+  }
 }
 
 .addition-form__point {
   margin: 10px;
   display: flex;
-  align-items: center;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 47.5%;
+    width: 40%;
   }
 
   @media (min-width: @desktop-width) {
@@ -341,47 +348,57 @@
 
 .option {
   display: block;
-  margin-bottom: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 2em;
 }
 
 .addition-form__label {
   padding-left: 1.2em;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-top: 2px;
+  }
 }
 
 .addition-form__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
 .addition-form__checkbox {
   position: absolute;
-  margin-left: -1.2em;
-  width: 1em;
-  height: 1em;
-  background-color: tomato;
-  background-image: url("source/img/off.svg");
+  margin-left: -2.2em;
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/off.svg");
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -3.2em;
+  }
 }
 
 .addition-form__input:checked + .addition-form__checkbox {
-  background-image: url("images/on.svg");
+  background-image: url("/img/on.svg");
 }
 
 .addition-form__input:focus + .addition-form__checkbox {
-  background-image: url("img/off.svg");
+  background-image: url("/img/off.svg");
 }
 
 .addition-form__input:checked:focus + .addition-form__checkbox {
-  background-image: url("img/off.svg");
+  background-image: url("/img/on.svg");
 }
 
 .addition-form__input:disabled + .addition-form__checkbox {
-  background-image: url("img/off.svg");
+  background-image: url("/img/off.svg");
 }
 
 .addition-form__input:checked:disabled + .addition-form__checkbox {
-  background-image: url("img/off.svg");
+  background-image: url("/img/on.svg");
 }
 
 .program__intro {
