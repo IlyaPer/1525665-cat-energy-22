@@ -16,8 +16,26 @@
 
 .page-main__title {
   margin-left: 5%;
+  font-size: 36px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+  }
 }
 
 .page-main__hr {
   color: @catalog-hr;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page__extra-products-container {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
