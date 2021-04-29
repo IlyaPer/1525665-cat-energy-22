@@ -3,38 +3,90 @@
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5%;
+    justify-content: space-between;
+  }
 }
 
 .product-list__item {
+  margin-top: 20px;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     background-color: @basic-grey;
     width: 324px;
-    height: 512px;
+    margin-top: 70px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 20px;
+    margin-top: 50px;
     width: 245px;
-    height: 512px;
   }
 }
 
-.product-list__item--more {
+.product-list__container {
   display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  width: 70%;
-  height: 279px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    margin-top: -70px;
+  }
+}
+
+.product-list__container-more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list__img {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-list__item-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-list__item--more {
+  text-align: center;
+  padding: 0;
+  margin: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 65px;
     width: 324px;
-    height: 429px;
+    height: 100%;
     background-color: @white;
     border: 2px solid @basic-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 20px;
+    margin-top: 50px;
+    padding: 5px;
+    width: 245px;
+    height: auto;
   }
 }
 
 .product-list__button {
+  border: none;
   width: 279px;
   height: 40px;
   background-color: @basic-grey;
@@ -48,10 +100,11 @@
   }
 }
 
-.page-main__title {
-  font-size: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+.product-list__button--more {
+  @media (min-width: @tablet-width) {
+    width: 80%;
+    margin-bottom: 27px;
+  }
 }
 
 .product-list__title {
@@ -64,9 +117,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @special-grey;
+  }
 }
 
 .product-list__text {
+  margin-top: 0;
+  margin-bottom: 5px;
   width: 50%;
   font-size: 12px;
   font-family: "Arial", sans-serif;
@@ -74,19 +135,97 @@
 }
 
 .product-list__order-button {
+  margin-top: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  width: 280px;
+  width: 100%;
+  border: none;
   height: 40px;
   background-color: @basic-green;
   color: @white;
 
   @media (min-width: @tablet-width) {
     width: 249px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     width: 168px;
+  }
+}
+
+.product-list__text--info {
+  text-align: right;
+}
+
+.product-list__title--more {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20%;
+  }
+}
+
+.product-list__picture--more {
+  flex-shrink: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  order: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5%;
+  }
+}
+
+.product-list__container-max-width {
+  width: 100%;
+}
+
+.product-list__description--more {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 5%;
+  }
+}
+
+.product-list__product-hr {
+  margin-left: -5%;
+  margin-top: 5%;
+  padding: 0;
+  position: absolute;
+  color: @special-grey;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.product-list__hr {
+  color: @catalog-hr;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transform: scale(0);
+
+  @media (min-width: @tablet-width) {
+    transform: scale(1);
+    width: 100%;
   }
 }

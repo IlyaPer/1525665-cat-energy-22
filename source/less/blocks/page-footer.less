@@ -1,20 +1,25 @@
 .page-footer {
   background-color: @basic-grey;
-  height: 236px;
-  margin: 0;
+  margin-top: 0;
+  padding: 0;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    padding: 50px;
     display: flex;
-    align-content: baseline;
+    align-content: center;
   }
 }
 
 .page-footer__img {
-  margin-top: 35px;
-  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__img--first {
@@ -31,7 +36,7 @@
   margin-right: 5%;
   color: @programs-hr;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     transform: scale(0);
   }
 }
