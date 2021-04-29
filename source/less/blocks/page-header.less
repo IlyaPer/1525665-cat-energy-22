@@ -46,7 +46,7 @@
   }
 }
 
-.main-nav__toggle {
+.page-header__toggle {
   border: none;
   background-color: inherit;
 
@@ -111,11 +111,7 @@
 
 .site-list__href--active {
   @media (min-width: @tablet-width) {
-    border-bottom: 2px solid @underline-menu;
-  }
-
-  @media (min-width: @desktop-width) {
-    border-bottom: 2px solid @white;
+    border-bottom: 2px solid @basic-green;
   }
 }
 
@@ -128,12 +124,8 @@
   color: black;
 }
 
-.site-list__btn-href--active {
-  @media (min-width: @tablet-width) {
-    border-bottom: 2px solid @basic-green;
-  }
-}
-
 .site-list__href--main {
-  color: @white;
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
 }
