@@ -21,7 +21,7 @@
   @media (min-width: @tablet-width) {
     background-color: @basic-grey;
     width: 324px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,11 +49,19 @@
 }
 
 .product-list__img {
+  margin-top: 10%;
   width: 70%;
-  text-align: center;
   display: block;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 15%;
+  }
 }
 
 .product-list__item-container {
