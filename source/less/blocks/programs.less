@@ -133,13 +133,18 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("img/bg-header@2x.jpg");
+    background-size: 1338px auto;
+  }
 }
 
 .programs__green-background {
   background-color: rgba(104, 183, 56, 85%);
   grid-column: 1 / 1;
   grid-row: 1 / 1;
-  z-index: 2;
+  z-index: 4;
 }
 
 .programs__background-photo {
@@ -154,6 +159,14 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/index-background-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/index-background-desktop1.5x.png");
   }
 }
 
@@ -181,6 +194,17 @@
   margin-right: 10%;
 }
 
+.programs__photo-container {
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/index-can1,44x.png");
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/index-can1,5x.png");
+    background-size: 1338px auto;
+  }
+}
+
 .programs__photo {
   display: none;
 
@@ -198,7 +222,7 @@
     margin-left: -15%;
     width: 552px;
     height: 499px;
-    z-index: 3;
+    z-index: 6;
   }
 }
 

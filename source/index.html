@@ -54,7 +54,7 @@
               <p class="programs__slogan">Занялся собой? Займись котом!</p>
               <button class="programs__button programs__button--desktop">ПОДОБРАТЬ ПРОГРАММУ</button>
             </div>
-            <div>
+            <div class="programs__photo-container">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/index-can.png">
                 <img class="programs__photo" src="img/index-can-tablet.png" alt="Банка с курицей">
@@ -63,7 +63,10 @@
             <div class="programs__text-container">
               <div class="programs__header-background">
                 <div class="programs__green-background"></div>
-                <img class="programs__background-photo" src="img/index-background-desktop2.png" alt="Облизывающийся кот">
+                <picture class="programs__background-photo">
+                  <source media="(min-width: 1200px)" srcset="img/index-background-desktop.png">
+                  <img src="img/index-background-desktop2.png" alt="Облизывающийся кот">
+                </picture>
               </div>
               <img class="programs__photo programs__photo--mobile" src="img/index-can-mobile.png" alt="Банка с курицей">
               <a class="programs__btn-href" href="form.html"><button class="programs__button programs__button--mobile">ПОДОБРАТЬ ПРОГРАММУ</button></a>
