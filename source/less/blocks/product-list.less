@@ -21,12 +21,12 @@
   @media (min-width: @tablet-width) {
     background-color: @basic-grey;
     width: 324px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 245px;
   }
 }
@@ -48,12 +48,18 @@
   justify-content: space-between;
 }
 
-.product-list__img {
-  width: 70%;
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.product-list__img-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    margin: auto;
+    width: 70%;
+    height: 200px;
+  }
 }
 
 .product-list__item-container {
@@ -69,7 +75,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-top: 65px;
+    margin-top: 89px;
     width: 324px;
     height: 100%;
     background-color: @white;
@@ -227,5 +233,75 @@
   @media (min-width: @tablet-width) {
     transform: scale(1);
     width: 100%;
+  }
+}
+
+.product-list__img--first {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-1-desktop11.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-1-desktop11.44x.png");
+  }
+}
+
+.product-list__img--second {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-2-desktop11.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-2-desktop1.44x.png");
+  }
+}
+
+.product-list__img--third {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-3-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-3-desktop1.44x.png");
+  }
+}
+
+.product-list__img--fourth {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-4-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-4-desktop1.44x.png");
+  }
+}
+
+.product-list__img--fifth {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-5-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-5-desktop1.44x.png");
+  }
+}
+
+.product-list__img--sixth {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-6-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/catalog-6-desktop1.44x.png");
+  }
+}
+
+.product-list__img--seventh {
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/catalog-7-desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("source/img/resolution-photos/catalog-7-desktop1.44x.png");
   }
 }

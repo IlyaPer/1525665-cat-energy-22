@@ -79,18 +79,33 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: -90px;
+    margin-right: 40px;
+  }
 }
 
 .example__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("img/resolution-photos/image_cat_desktop1.5x.png");
+  }
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("img/resolution-photos/image_cat_desktop1.5x.png");
+  }
 }
 
 .example__grid-container {
   @media (min-width: @desktop-width) {
-    grid-column: 2;
-    grid-row: 1 / 1;
+    position: absolute;
+    left: 50%;
+    margin-top: -20%;
   }
 }
 
