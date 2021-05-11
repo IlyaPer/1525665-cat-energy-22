@@ -6,7 +6,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -28,7 +29,7 @@
 }
 
 .main-nav__hr {
-  width: calc(100% + 12px);
+  width: 100%;
   position: absolute;
   margin-left: -5%;
   color: @page-header-hr;
@@ -96,9 +97,13 @@
 }
 
 .site-list__item {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .site-list__hr {
@@ -151,6 +156,7 @@
 }
 
 .site-list__href {
+  margin: 20px;
   text-decoration: none;
   color: black;
 }
