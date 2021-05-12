@@ -38,7 +38,7 @@
   font-weight: 400;
   width: 100%;
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   color: white;
   text-align: center;
 
@@ -52,8 +52,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 20%;
+    margin-top: 30%;
+    line-height: 60px;
   }
+}
+
+.programs__background-picture {
+  width: 100%;
 }
 
 .programs__slogan {
@@ -134,8 +139,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("img/bg-header@2x.jpg");
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("/img/resolution-photos/image_cat_desktop1.5x.png");
     background-size: 1338px auto;
   }
 }
@@ -162,11 +167,11 @@
   }
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("img/resolution-photos/index-background-desktop1.5x.png");
+    background-image: url("/img/resolution-photos/index-background-desktop1.5x.png");
   }
 
   @media (min-resolution: 144dpi) {
-    background-image: url("img/resolution-photos/index-background-desktop1.5x.png");
+    background-image: url("/img/resolution-photos/index-background-desktop1.5x.png");
   }
 }
 
@@ -180,7 +185,7 @@
   justify-content: space-around;
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin-top: 5%;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -196,11 +201,11 @@
 
 .programs__photo-container {
   @media (min-resolution: 144dpi) {
-    background-image: url("img/resolution-photos/index-can1,44x.png");
+    background-image: url("/img/resolution-photos/index-can1.44x.png");
   }
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("img/resolution-photos/index-can1,5x.png");
+    background-image: url("/img/resolution-photos/index-can1,5x.png");
     background-size: 1338px auto;
   }
 }
@@ -268,10 +273,12 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 200px;
-    height: 211px;
-    margin-top: 50px;
+    margin-top: 25%;
     margin-right: 10%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -327,4 +334,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.programs__icon {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
 }
