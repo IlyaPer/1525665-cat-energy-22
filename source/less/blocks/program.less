@@ -17,8 +17,7 @@
 }
 
 .program__cat-info {
-  margin: 20px;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
 
@@ -28,6 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: space-between;
     margin: 0;
     width: 40%;
     height: 200px;
@@ -60,10 +60,12 @@
 
   @media (min-width: @desktop-width) {
     height: 52px;
+    margin-top: 6px;
   }
 }
 
 .program-choice {
+  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -83,12 +85,18 @@
 }
 
 .contact-form__title-container {
+  margin-top: -100px;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     margin-left: 5%;
     margin-top: 40px;
-    width: 65%;
+    width: 75%;
     background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
   }
 }
 
@@ -96,7 +104,6 @@
   margin-top: 10px;
   display: flex;
   align-items: center;
-  flex-grow: 1;
   width: 100%;
 
   @media (min-width: @tablet-width) {
@@ -108,7 +115,6 @@
   margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   margin-left: 5%;
 
   @media (min-width: @tablet-width) {
@@ -117,6 +123,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 100%;
     justify-content: space-around;
     margin-left: 5%;
   }
@@ -172,11 +179,11 @@
 }
 
 .addition-form__point {
-  margin: 10px;
   display: flex;
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    margin: 20px;
     width: 40%;
   }
 
@@ -255,11 +262,11 @@
   margin-top: 21px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 78%;
+    margin-left: 85%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 37%;
+    margin-left: 38%;
     margin-top: 25px;
   }
 }
@@ -273,12 +280,17 @@
   margin-top: 30px;
   text-align: left;
   position: absolute;
-  width: 40%;
+  width: 50%;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
     margin-left: 5%;
     margin-top: 40px;
+    width: 30%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
   }
 }
 
@@ -298,7 +310,9 @@
 
 .program__decorative-hr {
   width: calc(100% - 4px);
-  border: 2px solid @basic-green;
+  height: 2px;
+  color: @basic-green;
+  background-color: @basic-green;
   margin-top: 40px;
   z-index: 0;
 
@@ -331,7 +345,7 @@
   line-height: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  width: 40%;
+  width: 50%;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -347,12 +361,11 @@
 
 .option {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 2em;
+  margin-bottom: 0.8em;
 }
 
 .addition-form__label {
-  padding-left: 1.2em;
+  padding-left: 2em;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -401,6 +414,7 @@
 }
 
 .program__intro {
+  margin-top: -30px;
   margin-left: 5%;
   font-size: 36px;
   line-height: 36px;
@@ -408,12 +422,13 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
+    margin-top: 50px;
     font-size: 60px;
   }
 }
 
 .program-form__container-btn {
-  margin: 0;
+  margin-top: 5%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -449,13 +464,26 @@
 
 .program-form__label {
   line-height: 18px;
-  margin: 10px;
+  margin-right: 10px;
   height: 52px;
   color: @special_dark-grey;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    flex-grow: 1;
+  }
+}
+
+.program-form__label--age {
+  width: 131px;
+
+  @media (min-width: @desktop-width) {
+    width: 160px;
+  }
+}
+
+.program-form__label--weight {
+  @media (min-width: @desktop-width) {
+    width: 90px;
   }
 }
 
@@ -468,13 +496,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     flex-grow: 1;
-    margin-top: -10px;
   }
 }
 
 .contact-form__title {
   margin-left: 5%;
-  width: 100%;
   font-size: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -500,6 +526,7 @@
 }
 
 .contact-form__label {
+  margin-right: 5px;
   height: 45px;
   line-height: 18px;
   font-size: 16px;
@@ -525,6 +552,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    width: 323px;
   }
 }
 
@@ -554,13 +582,14 @@
   background-color: @basic-green;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  width: 250px;
-  height: 40px;
+  font-size: 16px;
+  padding: 14px 44px;
+  width: 280px;
   border: none;
   color: @white;
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
     width: 568px;
     height: 52px;
   }
