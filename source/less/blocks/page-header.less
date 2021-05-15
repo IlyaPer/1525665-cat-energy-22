@@ -6,15 +6,20 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 20px;
-  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 15px;
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: baseline;
     font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
   }
 }
 
@@ -22,6 +27,7 @@
   width: 100%;
   color: @page-header-hr;
   height: 1px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -29,11 +35,9 @@
 }
 
 .main-nav__hr {
-  width: 100%;
-  position: absolute;
-  margin-left: -5%;
-  color: @page-header-hr;
-  height: 1px;
+  width: 100vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -50,6 +54,7 @@
 
   @media (min-width: @tablet-width) {
     width: 20%;
+    margin-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,7 +87,6 @@
   align-content: baseline;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     flex-wrap: nowrap;
@@ -97,9 +101,10 @@
 }
 
 .site-list__item {
-  padding: 20px;
   text-align: center;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @desktop-width) {
     padding: 0;
@@ -113,27 +118,27 @@
 .page-header__logo {
   height: 38px;
   width: 38px;
-  background-image: url("/img/logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     width: 174px;
     height: 52px;
-    background-image: url("/img/logo-tablet.svg");
+    background-image: url("../img/logo-tablet.svg");
   }
 
   @media (min-width: @desktop-width) {
     width: 202px;
     height: 59px;
     margin-right: 15px;
-    background-image: url("/img/logo-desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
   }
 }
 
 .page-header__logo-image {
   height: 38px;
-  background-image: url("/img/logo-desktop.svg");
+  background-image: url("../img/logo-desktop.svg");
 
   @media (min-width: @tablet-width) {
     height: 52px;
@@ -147,6 +152,7 @@
 
 .site-list__href--active {
   @media (min-width: @tablet-width) {
+    padding-bottom: 5px;
     border-bottom: 2px solid @basic-green;
   }
 }
@@ -174,7 +180,12 @@
 }
 
 .site-list__href--main-active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-green;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-bottom: 5px;
     border-bottom: 2px solid @white;
   }
 }
