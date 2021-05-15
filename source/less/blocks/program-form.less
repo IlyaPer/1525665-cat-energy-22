@@ -1,0 +1,102 @@
+.program-form {
+  position: relative;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.program-form__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    height: 200px;
+  }
+}
+
+.program-form__input {
+  border: 1px solid @special-grey;
+  font-size: 16px;
+  height: 46px;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 567px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 52px;
+    margin-top: 6px;
+  }
+}
+
+.program-form__container-btn {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 5%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.program-form__max-width {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+}
+
+.program-form__label {
+  line-height: 18px;
+  margin-right: 10px;
+  height: 52px;
+  color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.program-form__label--age {
+  width: 131px;
+
+  @media (min-width: @desktop-width) {
+    width: 160px;
+  }
+}
+
+.program-form__label--weight {
+  @media (min-width: @desktop-width) {
+    width: 90px;
+  }
+}
+
+.program-form__submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: @basic-green;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 14px 44px;
+  width: 280px;
+  border: none;
+  color: @white;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    width: 568px;
+    height: 52px;
+  }
+}
