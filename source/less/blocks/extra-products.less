@@ -207,7 +207,7 @@
     }
   }
 
-  @media (max-width: @desktop-width) {
+  @media (max-width: @tablet-width) {
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/block_gift1.5.webp");
     }
@@ -231,7 +231,6 @@
 .extra-products__gift-2-element {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
-  width: 95%;
   margin-top: 25%;
 
   @media (min-width: @tablet-width) {
@@ -250,8 +249,8 @@
 
 
 .extra-products__gift-description {
-  margin-top: 15%;
   text-align: center;
+  margin-top: 15%;
   font-size: 16px;
   font-family: "Arial", sans-serif;
   font-weight: 100;
@@ -282,6 +281,14 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     height: auto;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    overflow: hidden;
+  }
+
+  @media (min-resolution: 144dpi) {
+    overflow: hidden;
   }
 }
 
